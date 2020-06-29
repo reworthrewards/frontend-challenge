@@ -1,0 +1,60 @@
+{
+	"name": "fullstack-challenge",
+	"version": "0.1.2",
+	"description": "Code challenge part of our hiring process",
+	"main": "index.js",
+	"scripts": {
+		"start": "parcel -p 6675 index.html",
+		"build": "parcel build index.html --no-minify --no-source-maps --no-cache",
+		"clean": "rm -rf dist/*; rm -rf .cache",
+		"gendocs": "jsdoc -r -c .jsdoc.json src",
+		"prettify": "prettier --write src",
+		"lint": "eslint --fix src cypress; stylelint src/**/*.scss --fix"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com-work:appuntos/fullstack-challenge.git"
+	},
+	"author": "John Falcón for ReWorth",
+	"license": "ISC",
+	"dependencies": {
+		"preact": "^10.4.4",
+		"preval.macro": "^5.0.0",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"settings": "^0.1.1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.10.3",
+		"@babel/preset-react": "^7.10.1",
+		"eslint": "^7.3.1",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-jsx-a11y": "^6.3.1",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-plugin-react": "^7.20.2",
+		"eslint-plugin-react-hooks": "^4.0.4",
+		"parcel-bundler": "^1.12.4",
+		"prettier": "^2.0.5"
+	},
+	"alias": {
+		"settings": "./src/settings",
+		"react": "preact/compat",
+		"react-dom/test-utils": "preact/test-utils",
+		"react-dom": "preact/compat"
+	},
+	"prettier": {
+		"tabWidth": 4,
+		"trailingComma": "all",
+		"arrowParens": "avoid",
+		"jsxBracketSameLine": true
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "eslint src --fix; pretty-quick --staged; stylelint src/**/*.scss --fix",
+			"pre-push": "npm run test",
+			"post-merge": "npm install",
+			"post-checkout": "npm install"
+		}
+	}
+}
