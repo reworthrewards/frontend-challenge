@@ -1,0 +1,13 @@
+---
+dictionaries:
+    - en
+    - en_GB
+    - es
+
+# Any files/folders we should ignore?
+excluded_files:
+    - "node_modules/**/*"
+    - ".typo-ci.yml"
+
+excluded_words:
+    - typoci

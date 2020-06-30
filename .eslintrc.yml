@@ -1,0 +1,29 @@
+plugins:
+    - prettier
+    - sonarjs # https://github.com/SonarSource/eslint-plugin-sonarjs
+    - standard
+    - jsx-a11y
+
+extends:
+    - "plugin:import/errors"
+    - "plugin:sonarjs/recommended"
+    - "plugin:jsx-a11y/recommended"
+    - "standard"
+    - "standard-jsx"
+    - "prettier"
+
+env:
+    browser: true
+    es6: true
+    node: true
+
+rules:
+    react/react-in-jsx-scope: 0
+    react/jsx-indent: 0 # ignore, handled by prettier
+    react/jsx-indent-props: 0 # ignore, handled by prettier
+    react/jsx-closing-bracket-location: 0 # ignore, handled by prettier
+    react/jsx-curly-newline: 0 # ignore, handled by prettier
+    no-undef: 0
+    no-extend-native: 0
+
+parser: babel-eslint
