@@ -1,6 +1,6 @@
-# Appuntos Marketplace Frontend
+# ReWorth Coding Challenge: fullstack
 
-![Build](https://github.com/appuntos/frontend/workflows/Build/badge.svg?branch=master)
+![Build](https://github.com/appuntos/fullstack-challenge/workflows/Build/badge.svg?branch=master)
 
 > Little coding challenge for our hiring process.
 > Involves React components and API integration tasks.
