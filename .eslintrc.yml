@@ -27,3 +27,12 @@ rules:
     no-extend-native: 0
 
 parser: babel-eslint
+
+settings:
+    import/resolver:
+        alias:
+            - ["store", "./src/store"]
+            - ["settings", "./src/settings"]
+            - ["services", "./src/services"]
+            - ["utils", "./src/utils"]
+            - ["ui", "./src/ui"]

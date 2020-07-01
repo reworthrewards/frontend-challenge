@@ -1,3 +1,103 @@
 {
-  "presets": ["@babel/preset-react"]
+    "env": {
+        "test": {
+            "presets": [
+                "@babel/preset-env"
+            ],
+            "plugins": [
+                "@babel/plugin-transform-modules-commonjs"
+            ]
+        }
+    },
+    "presets": [
+        "nano-react-app"
+    ],
+    "plugins": [
+        [
+            "recharts"
+        ],
+        [
+            "lodash"
+        ],
+        [
+            "macros"
+        ],
+        [
+            "ramda",
+            {
+                "useES": true
+            }
+        ],
+        [
+            "import",
+            {
+                "libraryName": "react-use",
+                "libraryDirectory": "lib",
+                "camel2DashComponentName": false
+            },
+            "react-use"
+        ],
+        [
+            "import",
+            {
+                "libraryName": "@ant-design/icons",
+                "libraryDirectory": "es/icons",
+                "camel2DashComponentName": false
+            },
+            "@ant-design/icons"
+        ],
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "style": true
+            },
+            "antd"
+        ],
+        [
+            "@babel/plugin-proposal-class-properties",
+            {
+                "loose": true
+            }
+        ],
+        [
+            "@babel/plugin-transform-react-jsx",
+            {
+                "pragmaFrag": "React.Fragment"
+            }
+        ],
+        [
+            "auto-import",
+            {
+                "declarations": [
+                    {
+                        "default": "React",
+                        "path": "react",
+                        "members": [
+                            "useState",
+                            "useEffect"
+                        ]
+                    },
+                    {
+                        "path": "react-i18next",
+                        "members": [
+                            "useTranslation"
+                        ]
+                    },
+                    {
+                        "default": "store",
+                        "path": "store"
+                    },
+                    {
+                        "default": "assert",
+                        "path": "utils/assert"
+                    },
+                    {
+                        "default": "log",
+                        "path": "loglevel"
+                    }
+                ]
+            }
+        ]
+    ]
 }
