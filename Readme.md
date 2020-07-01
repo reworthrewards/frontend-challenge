@@ -101,6 +101,7 @@ Please read the following instructions carefully and if you have any questions p
 3.  You can use and install npm libraries if needed, please provide a reasoning for your choices, you can use a component library or create custom components.
 4.  Optimize and check your code for errors
 5.  When you're ready, push your solution to your forked repo and let us know via email!
+6.  **Bonus** Implement list ordering by any of the object attributes and explain how you did it
 
 -   We'll evaluate the overall solution, so take time to optimize and document your code. We take into consideration the following points: Coding practices and standards, code optimization, does it run/work?, Documentation and reasoning behind your solution.
 -   If you have any questions or issues running the cample project please let us know ASAP so we can get you help.
