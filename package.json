@@ -1,60 +1,99 @@
 {
-	"name": "fullstack-challenge",
-	"version": "0.1.2",
-	"description": "Code challenge part of our hiring process",
-	"main": "index.js",
-	"scripts": {
-		"start": "parcel -p 6675 index.html",
-		"build": "parcel build index.html --no-minify --no-source-maps --no-cache",
-		"clean": "rm -rf dist/*; rm -rf .cache",
-		"gendocs": "jsdoc -r -c .jsdoc.json src",
-		"prettify": "prettier --write src",
-		"lint": "eslint --fix src cypress; stylelint src/**/*.scss --fix"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git@github.com-work:appuntos/fullstack-challenge.git"
-	},
-	"author": "John Falcón for ReWorth",
-	"license": "ISC",
-	"dependencies": {
-		"preact": "^10.4.4",
-		"preval.macro": "^5.0.0",
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
-		"settings": "^0.1.1"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.10.3",
-		"@babel/preset-react": "^7.10.1",
-		"eslint": "^7.3.1",
-		"eslint-config-prettier": "^6.11.0",
-		"eslint-plugin-import": "^2.22.0",
-		"eslint-plugin-jsx-a11y": "^6.3.1",
-		"eslint-plugin-prettier": "^3.1.4",
-		"eslint-plugin-react": "^7.20.2",
-		"eslint-plugin-react-hooks": "^4.0.4",
-		"parcel-bundler": "^1.12.4",
-		"prettier": "^2.0.5"
-	},
-	"alias": {
-		"settings": "./src/settings",
-		"react": "preact/compat",
-		"react-dom/test-utils": "preact/test-utils",
-		"react-dom": "preact/compat"
-	},
-	"prettier": {
-		"tabWidth": 4,
-		"trailingComma": "all",
-		"arrowParens": "avoid",
-		"jsxBracketSameLine": true
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "eslint src --fix; pretty-quick --staged; stylelint src/**/*.scss --fix",
-			"pre-push": "npm run test",
-			"post-merge": "npm install",
-			"post-checkout": "npm install"
-		}
-	}
+    "name": "fullstack-challenge",
+    "version": "0.1.2",
+    "description": "Code challenge part of our hiring process",
+    "main": "index.js",
+    "scripts": {
+        "start": "parcel -p 6675 index.html",
+        "build": "parcel build index.html --no-minify --no-source-maps --no-cache",
+        "clean": "rm -rf dist/*; rm -rf .cache",
+        "gendocs": "jsdoc -r -c .jsdoc.json src",
+        "prettify": "prettier --write src",
+        "lint": "eslint --fix src; stylelint src/**/*.scss --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com-work:appuntos/fullstack-challenge.git"
+    },
+    "author": "John Falcón for ReWorth",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/runtime": "^7.10.1",
+        "babel-plugin-auto-import": "^1.0.5",
+        "eslint-config-standard-jsx": "^8.1.0",
+        "loglevel": "^1.6.8",
+        "parcel": "^1.12.4",
+        "parcel-plugin-less-js-enabled": "^1.0.2",
+        "postcss-modules": "^2.0.0",
+        "preact": "^10.4.4",
+        "preval.macro": "^5.0.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "recharts": "^1.8.5",
+        "stylelint-scss": "^3.17.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.5.5",
+        "@babel/plugin-transform-modules-commonjs": "^7.9.0",
+        "@babel/preset-env": "^7.10.4",
+        "babel-eslint": "^10.1.0",
+        "babel-jest": "^26.0.0",
+        "babel-plugin-auto-import": "^1.0.5",
+        "babel-plugin-import": "^1.13.0",
+        "babel-plugin-lodash": "^3.3.4",
+        "babel-plugin-macros": "^2.8.0",
+        "babel-plugin-ramda": "^2.0.0",
+        "babel-plugin-recharts": "^1.2.1",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-nano-react-app": "^0.1.0",
+        "cypress": "^4.9.0",
+        "eslint": "^7.3.1",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-config-standard": "^14.1.1",
+        "eslint-import-resolver-alias": "^1.1.2",
+        "eslint-plugin-import": "^2.22.0",
+        "eslint-plugin-jsx-a11y": "^6.3.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-react": "^7.20.2",
+        "eslint-plugin-react-hooks": "^4.0.4",
+        "eslint-plugin-sonarjs": "^0.5.0",
+        "eslint-plugin-standard": "^4.0.1",
+        "husky": "^4.2.5",
+        "import-all.macro": "^3.0.0",
+        "parcel-bundler": "^1.12.4",
+        "parcel-plugin-bundle-visualiser": "^1.2.0",
+        "parcel-plugin-less-js-enabled": "^1.0.2",
+        "prettier": "^2.0.5",
+        "pretty-quick": "^2.0.1",
+        "stylelint": "^13.3.3",
+        "stylelint-config-rational-order": "^0.1.2",
+        "stylelint-config-recommended": "^3.0.0",
+        "stylelint-config-standard": "^20.0.0",
+        "stylelint-order": "^4.0.0",
+        "stylelint-prettier": "^1.1.2"
+    },
+    "alias": {
+        "settings": "./src/settings",
+        "ui": "./src/ui",
+        "react": "preact/compat",
+        "react-dom/test-utils": "preact/test-utils",
+        "react-dom": "preact/compat"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "trailingComma": "all",
+        "arrowParens": "avoid",
+        "jsxBracketSameLine": true
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "eslint src --fix; pretty-quick --staged; stylelint src/**/*.scss --fix",
+            "pre-push": "npm run test",
+            "post-merge": "npm install",
+            "post-checkout": "npm install"
+        }
+    }
 }
