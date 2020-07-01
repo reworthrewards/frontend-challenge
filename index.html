@@ -5,12 +5,22 @@
         <!-- Meta tags -->
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1 " />
-
+        <link
+            href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
     </head>
 
     <body>
-    
-        <div id="root"></div>
+        <header class="p-8 bg-gray-500">
+            <img
+                class="block m-auto"
+                src="https://reworth-public-assets.s3-us-west-2.amazonaws.com/img/reworth-logo-white.png"
+                alt="ReWorth rewards"
+            />
+        </header>
+        <!-- This is the root element for React -->
+        <div class="text-blue-600" id="root"></div>
         <script src="./src/index.js"></script>
     </body>
 </html>
