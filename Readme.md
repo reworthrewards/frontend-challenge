@@ -19,7 +19,7 @@ npm install
 ```
 
 After that start the development server and the test api server(run each
-command in a seperate terminal session, I recommend using tmux)
+command in a separate terminal session, I recommend using tmux)
 
 ```{.bash}
 npm start
@@ -92,7 +92,7 @@ Please read the following instructions carefully and if you have any questions p
 1.  Fork this repo
 2.  Using the canvas project, implement the following requirements:
 
--   Connect to the ReWorth API with help from the provided documentation (No authentication needed for this exercise)
+-   Connect to the ReWorth API with help from the provided documentation (No authentication needed for this exercise) https://docs.google.com/document/d/1ckJwM6Uy25uAZL8ja4PlzYE_iusgb5cWgpL0mTjT6Rw
 -   Perform a GET request to the directory and fetch the offer array
 -   Display the offers in a list using the data you have available from the API (get creative)
 -   Based on the colors of ReWorth, make it look cool. No design is provided but a nice UI is expected
