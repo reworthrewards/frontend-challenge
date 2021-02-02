@@ -1,6 +1,6 @@
 # ReWorth Coding Challenge: fullstack
 
-![Build](https://github.com/appuntos/fullstack-challenge/workflows/Build/badge.svg?branch=master)
+![Build](https://github.com/reworthrewards/frontend-challenge/workflows/Build/badge.svg?branch=master&event=push)
 
 > Little coding challenge for our hiring process.
 > Involves React components and API integration tasks.
@@ -111,3 +111,7 @@ Please read the following instructions carefully and if you have any questions p
 -   Reactjs
 -   Parcel
 -   Babel
+
+## Any questions?
+
+-   John Falcón, CTO @Reworth [john.f@reworth.co]
