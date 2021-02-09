@@ -4,12 +4,12 @@ const fetchOffersList = () => {
     return [];
 };
 
-export default function App() {
+function App() {
     return (
         <>
-            <p class="py-4 text-lg text-center">Start here :) Good luck!</p>
-
             <DirectoryList offerList={fetchOffersList()} />
         </>
     );
 }
+
+export default App;
