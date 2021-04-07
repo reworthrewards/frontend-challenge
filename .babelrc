@@ -77,8 +77,7 @@
                             "useState",
                             "useEffect",
                             "useMemo",
-                            "lazy",
-                            "Suspense"
+                            "lazy"
                         ]
                     },
                     {
