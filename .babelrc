@@ -75,7 +75,9 @@
                         "path": "react",
                         "members": [
                             "useState",
-                            "useEffect"
+                            "useEffect",
+                            "useMemo",
+                            "lazy"
                         ]
                     },
                     {
