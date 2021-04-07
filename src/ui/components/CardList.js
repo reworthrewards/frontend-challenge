@@ -29,7 +29,7 @@ export default function CardList({ offerList, ...props }) {
     if (!offers) return <Loader />;
     return (
         <>
-            <select name="orderArr" onBlur={e => orderArray(e)}>
+            <select name="orderArr" onChange={e => orderArray(e)}>
                 <option disabled selected>
                     <b>Ordenar por</b>
                 </option>
